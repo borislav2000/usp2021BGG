@@ -1,0 +1,85 @@
+
+<label style="cursor:pointer" for="modal-{{Name}}">
+        <div for="modal-{{Name}}">
+                <div class="relative bg-red-500 w-full">
+                        <img class="w-full h-full absolute object-cover" src="{{Image}}">
+                </div>
+                <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">{{Name}} - <span class="text-gray-600">{{Brand}}</span></div>
+                        <p class="text-gray-700 text-base">
+                                {{Price}}
+                        </p>
+                </div>
+                <div class="px-6 py-4">
+                        <span class="mb-2 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{{Fuel type}}</span>
+                        <span class="mb-2 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{{Mileage}}</span>
+                        <span class="mb-2 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">{{Transmission}}</span>
+                        <span class="mb-2 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">{{Model year}}</span><br>
+                </div>
+        </div>
+</label>
+
+<input class="modal-state" id="modal-{{Name}}" type="checkbox" />
+<div class="modal">
+        <label class="modal__bg" for="modal-{{Name}}"></label>
+        <div class="modal__inner">
+                <label class="modal__close" for="modal-{{Name}}"></label>
+                <div class="m-3">
+                                <div class="flex mb-4">
+                                        <div class="w-1/2">
+                                                <img class="rounded-md modal-image" src="{{Image}}">
+                                        </div>
+                                        <div>
+                                            <p class="text-gray-900 font-bold text-xl mb-6 ml-8">DETAILED CHARACTERISTICS
+                                            </p>
+                                            <table class="table-auto ml-8">
+                                                <tbody>
+                                                
+                                                <tr>
+                                                        <td class="border px-4 py-2">Number of doors</td>
+                                                        <td class="border px-4 py-2">{{Doors}}</td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="border px-4 py-2">Exterior color</td>
+                                                        <td class="border px-4 py-2">{{Exterior Color}}</td>
+                                                </tr>                                    
+                                            
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                </div>
+
+                                <div class="flex mb-4">
+                                        <div class="w-1/2 m-3">
+                                                <div class="font-bold text-xl mb-2">{{Name}} - <span class="text-gray-600">{{Brand}}</span></div>
+                                                <p class="text-lg text-gray-600 flex items-center">{{Price}}</p>
+                                                <div class="py-4">
+                                                        <span class="mb-2 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{{Fuel type}}</span>
+                                                        <span class="mb-2 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{{Mileage}}</span>
+                                                        <span class="mb-2 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">{{Transmission}}</span>
+                                                        <span class="mb-2 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">{{Model year}}</span><br>
+                                                </div>
+                                        </div>
+                                        <div class="w-1/2">
+                                                <div class="flex mb-4 ml-8">
+                                                      
+
+                                                </div>
+                                                <div class="w-1/2 ml-8">
+                                                        <div class="text-gray-900 font-bold text-xl mb-2">FEATURES
+                                                        </div>
+                                                        {{Features}}
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="flex">
+                                        <div class="m-3">
+                                                <div class="text-gray-900 font-bold text-xl mb-2">DESCRIPTION
+                                                </div>
+                                                {{Description}}
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
